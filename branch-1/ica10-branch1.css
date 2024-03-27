@@ -1,2 +1,12 @@
 /* TEAMMATE ONE EDITS THESE STYLES FOR YOUR TASKS */
 /* Macy Eskelsen */
+
+.logo img{
+  width: 100px;
+  height: 100px;
+}
+
+.logo img:hover {
+  transform: scale(2) rotate(0.3turn);
+  transition: width 2s, height 2s, translate(3px, 5px) 2s;
+}
