@@ -1,1 +1,81 @@
 /* TEAMMATE ONE EDITS THESE STYLES FOR YOUR TASKS */
+/* Macy Eskelsen */
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo img:hover {
+  transition: width 2s, height 2s, rotate 3s;
+  animation: rotating 1s linear;
+}
+
+.center-grid .box-4 {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: green;
+  font-size: 2em;
+  animation: gridChange 3s infinite linear;
+  display: grid;
+  place-items: center;
+}
+
+.center-grid .box-2 {
+  grid-column: 2;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 0, 25) 0%,
+    rgb(136, 14, 77) 35%,
+    rgb(255, 0, 225) 100%
+  );
+  font-size: 2em;
+}
+
+.center-grid .box-2:hover {
+  animation: gradientChange 4s infinite linear;
+}
+
+@keyframes rotating {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.5) rotate(5deg);
+  }
+  50% {
+    transform: scale(2) rotate(10deg);
+  }
+  75% {
+    transform: scale(1.5) rotate(5deg);
+  }
+  1000% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes gridChange {
+  0% {
+    grid-column: 1;
+  }
+  33% {
+    grid-column: 2;
+  }
+  66% {
+    grid-column: 3;
+  }
+  1000% {
+    grid-column: 1;
+  }
+}
+
+@keyframes gradientChange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
