@@ -1,1 +1,82 @@
 /* TEAMMATE TWO EDITS THESE STYLES FOR YOUR TASKS */
+
+/* Task 4 */
+.center-grid .box-3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.center-grid .box-3-style {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(red, red);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% 3px;
+    transition: background-size 500ms ease-in-out;
+
+    /* extra styling   */
+    font-weight: bold;
+}
+
+.center-grid .box-3-style:hover {
+    background-size: 100% 3px;
+    color: inherit;
+}
+
+/* Task 6 */
+aside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 20px;
+    height: 12em;
+    aspect-ratio: 3/2;
+    background-color: #ADD8E6;
+    color: #f4f4f4;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    animation-name: notification;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+}
+
+@keyframes notification {
+    0% {
+        transform: translateY(22.5em);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(22.5em);
+    }
+}
+
+/* Task 2 */
+.center-grid .box-1 {
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
